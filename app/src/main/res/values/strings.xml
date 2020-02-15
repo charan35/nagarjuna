@@ -1,0 +1,399 @@
+<resources>
+    <string name="app_name">AltaOSS</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="uploadImages">Choose your image</string>
+    <string name="employee_registration">Employee Registration</string>
+    <string name="enter_employee_id">Enter Employee Id</string>
+    <string name="submit">Submit</string>
+    <string-array name="Security">
+        <item>Select Security Question?</item>
+        <item>What is your First Bike?</item>
+        <item>Your Nick Name?</item>
+        <item>Your favourite color?</item>
+        <item>Your Hobby?</item>
+    </string-array>
+
+    <string name="admin">Alta Admin</string>
+    <string name="visitor">Visitor</string>
+    <string name="employee">Alta Employee</string>
+    <string name="checkin">Checkin Time</string>
+    <string name="checkout">Checkout Time</string>
+    <string name="delete">Delete Item</string>
+    <string name="modify">Modify Item</string>
+    <string name="search">Search Item</string>
+    <string name="display">Display all items</string>
+    <string name="visitor_details">Visitor Details</string>
+    <string name="first_name">First Name</string>
+    <string name="first_name_hint">First name</string>
+    <string name="last_name">Last Name</string>
+    <string name="last_name_hint">Last/Family name</string>
+    <string name="phone">Phone</string>
+    <string name="phone_hint">Enter the phone number</string>
+    <string name="reason_for_visit">Reason for visit</string>
+    <string name="reason_for_visit_hint">Enter the reason for visit</string>
+    <string name="person_to_meet">Appointment With</string>
+    <string name="person_to_meet_hint">Enter the name of the person you want to meet</string>
+    <string name="coming_from">Coming From</string>
+    <string name="coming_from_hint">Where are you from?</string>
+    <string name="department">Department</string>
+    <string name="clear_button">Clear</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="delete_button">Delete</string>
+    <string name="checkin_button">CHECKIN</string>
+    <string name="search_hint">Enter the item name</string>
+    <string name="employee_Details">Employee Details</string>
+    <string name="done">DONE</string>
+    <string name="feedback">About</string>
+    <string name="appointmentWith">Appointment With</string>
+    <string name="license_plate">License Plate</string>
+    <string name="badge_numbner">Badge Number</string>
+
+    <string-array name="Task_Status">
+        <item>Running</item>
+        <item>Discussing</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string-array name="Monthly">
+        <item>Monthly</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="Yearly">
+        <item>Yearly</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2025</item>
+        <item>2026</item>
+    </string-array>
+
+    <string-array name="Applyto">
+        <item>Reporting Manager</item>
+        <item>HR</item>
+        <item>Project Manager</item>
+        <item>Team Leader</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string-array name="Leave">
+        <item>Casual</item>
+        <item>sick</item>
+        <item>Medical</item>
+        <item>Halfday</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="Expenses">
+        <item>Please Select</item>
+        <item>Mobile</item>
+        <item>General Expenses</item>
+        <item>Conveyances</item>
+    </string-array>
+    <string-array name="money">
+        <item>Select</item>
+        <item>Cash</item>
+        <item>Credit Card</item>
+    </string-array>
+    <string-array name="Conveyances">
+        <item>Select</item>
+        <item>Own Car</item>
+        <item>Own 2 Wheeler</item>
+        <item>Taxi</item>
+        <item>Auto</item>
+        <item>Other Public Transport</item>
+    </string-array>
+    <string-array name="Generalexpenses">
+        <item>Select</item>
+        <item>Courier Charges</item>
+        <item>Diesel and Petrol Charges</item>
+        <item>Electricity and Water Bills</item>
+        <item>Entertainment and Business promotion</item>
+        <item>Gifts and Presentations</item>
+        <item>Media Charges</item>
+        <item>Medical</item>
+        <item>Office Telephone Bills</item>
+        <item>Other Expenses</item>
+        <item>Printing and Stationary</item>
+        <item>Rent Bills</item>
+        <item>Tea or Coffee and etc Bills</item>
+        <item>HouseKeeping and Miscellanous Charges</item>
+    </string-array>
+    <string-array name="Path">
+        <item>Change</item>
+        <item>YES</item>
+        <item>NO</item>
+        <item>EDIT</item>
+    </string-array>
+
+    <string-array name="Priority">
+        <item>Set Priority</item>
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="select">
+        <item>Select Department</item>
+        <item>Admin Department</item>
+        <item>Hardware Department</item>
+        <item>Networking Department</item>
+        <item>Software Department</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Status</item>
+        <item>solved</item>
+        <item>pending</item>
+        <item>solved and close Ticket</item>
+        <item>pending and close Ticket</item>
+
+    </string-array>
+
+    <string-array name="Details">
+        <item>Aadhar card</item>
+        <item>Pan card</item>
+        <item>Passport</item>
+    </string-array>
+    <string-array name="DocumentType">
+        <item>Joining Letter</item>
+        <item>Re-leaving Letter</item>
+        <item>Present Offer Letter</item>
+        <item>Previous Offer Letter</item>
+        <item>Prevoius Experience Letter</item>
+        <item>Previous PaySlips(3 Months)</item>
+        <item>Certificates</item>
+        <item>Payslips</item>
+        <item>Project Documents</item>
+        <item>Re-imbursement Slips</item>
+        <item>Course certificates</item>
+        <item>Patent Certificates</item>
+        <item>Bank Statements(Past 3Months)</item>
+    </string-array>
+    <string-array name="RewardsCategory">
+        <item>Performance Based</item>
+        <item>Project Based</item>
+        <item>Punctuality Based</item>
+        <item>Client Based</item>
+        <item>Reference Based</item>
+    </string-array>
+    <string-array name="RewardsType">
+        <item>1 Month</item>
+        <item>3 Months</item>
+        <item>Yearly</item>
+    </string-array>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Paragraph"> Websites are not just to look beautiful; we work to do business better from it.\n\n
+We design and develop good and pleasing websites. We trust in the quality of visuals, merged with proper functionality to make it user friendly.\n\n
+We first completely understand your need for a website. Once you make us understand your target, we kick start your project form the scratch and we make sure the deliverables are up to your expectation by means of design, quality and support services.\n\n
+ -> We built websites for greater responses.\n
+ -> Our execution differs for every industry we work.\n
+ -> We consider every customer is valuable and give individual support.\n
+ -> We always educate the customers about, need of use latest technology.\n
+ -> We respond quickly still maintain quality.\n\n
+Check with us, want we can to the best for the idea you and have in your mind?\n\n </string>
+
+    <string name="Paragraph1"> In this competitive world, we have just few minutes to grab the audience attention. We develop website that will convert viewers as your valuable customers for you.\n
+        To serve our clients with everything they need relating to their website and few listed down\n\n
+-> Analysis and Research Modules\n
+-> Creative Design\n
+-> Easy User Interfaces\n
+-> Search Engine Optimization (SEO)\n
+-> Search Engine Marketing (SEM)\n
+-> Responsive Web Design for all Devices\n
+-> Content Management Solutions\n
+-> Custom WordPress Development\n
+-> Website Hosting\n
+-> Website Redesign\n
+-> Website Maintenance\n\n
+We have a structured route to build in web design that can bring all new customers to your business, and even to promote yourself or your existing products online. Our clients have an edge to get better and significant business growth with our well-equipped and professionally designed websites.\n </string>
+
+    <string name="Paragraph2">"In today's scenario, people find online method as convenient way to do shopping. So, it time to move ahead to start your e-store and make your business online and promote your products globally. Do you ever counted the number of your website visitors are becoming your customers?\n
+It is all about "Make hay while the sun shines"; today people spend a lot of money online and It's time to take smart move and make use of current technology and grow your business at faster pace and to larger audience. No worry on size of your business; you can take advantage from it.\n
+We are here to happily educate and help you to make your e-commerce website as better medium to do business. We assist you by providing all required branding solution and software for your e-store which allows you to manage your store products with an excellent user interface, cool lists of product categories, user friendly shopping carts and secured administrative authentication, orders and offers management with an ease.\n
+As per demands, we can also add features for you to manage your inventory, coupons and sales reports without getting any help from technical people. When it comes to the visitor part, we can provide features that will allow them to log in via their Social Network account (like FaceBook, Google+1). We also assist people who seek help to update current e-commerce website.\n
+-> Site Management\n
+-> Search Engine Optimization\n
+-> Marketing Promotions and Tools\n
+-> Shipping\n
+-> Payment Gateway\n
+-> Order Management\n
+-> Security\n</string>
+
+    <string name="Paragraph3">It proven that it is the best ROI. So what stops you to make your business online?\n
+Call us for any query or Get your Quote! </string>
+
+    <string name="Paragraph4">Building a website is good move to promote your business, so your online medium is ready. What Next to bring in the traffic on to your website, every day. This system which helps you to do this is named "Search Engine Optimisation (SEO).\n
+How to do this? Our dedicated efficient SEO team work to increase your site visitors, repeated viewers, and your online exposure.\n
+Search engine optimization (SEO) is the process of affecting the visibility of a website or a web page in a search engine's unpaid results - often referred to as "natural," "organic," or "earned" results. In general, the earlier (or higher ranked on the search results page), and more frequently a site appears in the search results list, the more visitors it will receive from the search engine's users. SEO may target different kinds of search, including image search, local search, video search, academic search, news search and industry-specific vertical search engines.\n
+As an Internet marketing strategy, SEO considers how search engines work, what people search for, the actual search terms or keywords typed into search engines and which search engines are preferred by their targeted audience. Optimizing a website may involve editing its content, HTML and associated coding to both increase its relevance to specific keywords and to remove barriers to the indexing activities of search engines. Promoting a site to increase the number of back links, or inbound links, is another SEO tactic.\n
+So, the result of SEO depends you connect SEO strategy with web technology, there are may be factors that need to be noticed in order to get fruitful. Always we are here assisting you to meet your business marketing plan to be successful.\n </string>
+
+
+    <string name="Paragraph5">Social Media is the today way for communication that is dominating the regular publishing media. Social media marketing programs usually focus to create content that attracts attention and encourages readers to share it across their social networks.\n\n
+The outcome of the electronic word of mouth (eWoM) refers to any statement consumers share via the Internet (e.g., web sites, social networks, instant messages, news feeds) about an event, product, service, brand or company. When the underlying message spreads from user to user and because the information it appears to come from a trusted and reliable third-party source, it play a vital role to promote brand or company itself, this form of marketing results in earned media rather than paid media. We help you here to prepare content and make your business marketing to current trend.\n </string>
+
+    <string name="Paragraph6">Search engine marketing (SEM) is a form of Internet marketing that involves the promotion of websites by increasing their visibility in search engine results pages (SERPs) primarily through paid advertising.[1] SEM may incorporate search engine optimization (SEO), which adjusts or rewrites website content and site architecture to achieve a higher ranking in search engine results pages to enhance pay per click (PPC) listings\n
+"Search Engine Marketing" was once was used as an umbrella term to encompass both SEO (search engine optimization) and paid search activities. Over time, the industry has adopted the SEM acronym to refer solely to paid search.\n
+At Search Engine Land, we generally use SEM and/or "Paid Search" to refer to paid listings, with the longer term of search marketing used to encompass both SEO and SEM. Below are some of the most common terms also used to refer to SEM activities\n
+-> Paid search ads\n
+-> Paid search advertising\n
+-> PPC (pay-per-click)*\n
+-> PPC (pay-per-call) – some ads, particularly those served to mobile search users, may be charged by the number of clicks that resulted in a direct call from a smartphone.\n
+-> CPC (cost-per-click)*\n
+-> Most search ads are sold on a CPC / PPC basis, but some advertising options may also be sold on a CPM basis.\n
+-> Internet marketing\n
+-> Dynamic keyword insertion\n
+-> Search engine reputation management\n
+-> Search engine optimization\n
+-> Web marketing\n\n </string>
+
+    <string name="Paragraph7">
+-> Manage complex customer relationships across a variety of channels – both digital and traditional.\n
+-> Respond to and initiate dynamic customer interactions.\n
+-> Extract value from big data to make better decisions faster.\n\n</string>
+
+    <string name="Paragraph8">
+-> Email Marketing is Targeted\n
+-> Email Marketing Increases Brand Awareness\n
+-> Email Marketing is Easily Shareable.\n
+-> Email Marketing is Measurable\n
+-> Email Marketing is Cost effective.\n\n</string>
+
+    <string name="Paragraph9">
+-> It brings in new visitors every day\n
+-> It provides trustworthy impression\n
+-> It is the best ROI spent on advertising\n
+-> It gives incomparable value to your clients\n
+-> It is absolutely cost-effective\n
+-> It is keeps you in race among your business challengers\n\n</string>
+
+    <string-array name="Details2">
+        <item>Please Select Your Personal_ID</item>
+        <item>Aadhaar Card</item>
+        <item>PAN Card</item>
+        <item>Driving License</item>
+        <item>Voter ID</item>
+        <item>Passport</item>
+
+    </string-array>
+
+    <string-array name="Details1">
+        <item>Please Select Your Type of visit</item>
+        <item>Interview</item>
+        <item>Visitor</item>
+        <item>Contractor</item>
+        <item>Vendor</item>
+        <item>VIP</item>
+
+    </string-array>
+
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact based on your message
+        history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+</resources>

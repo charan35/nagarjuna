@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo"
+                app:srcCompat="@mipmap/ic_launcher_foreground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alta OSS"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:fontFamily="@font/bellb"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <HorizontalScrollView
+        android:id="@+id/lq"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbar"
+        android:measureAllChildren="false"
+        android:scrollbars="none"
+        android:background="@color/endblue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/endblue">
+
+            <ImageView
+                android:id="@+id/iv25"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:text=" HR ->"
+                android:id="@+id/admin"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:id="@+id/departments"
+                android:text=" Departments- >"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:id="@+id/emplist"
+                android:text=" Emp List - >"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:id="@+id/createpayslip"
+                android:text=" Create Payslip"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lq">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/payrolltitle"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:text="ALTA IT SOLUTIONS"
+                android:background="@drawable/border"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/payname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payrolltitle"
+                android:hint="Name:"
+                android:textColorHint="#000"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/midname"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastname"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/payempid"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payname"
+                android:hint="Employee ID:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/paydesg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payempid"
+                android:hint="Designation:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/payperiod"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/paydesg"
+                android:hint="Pay Period:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/paylocation"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payperiod"
+                android:hint="Location:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/payDept"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/paylocation"
+                android:hint="Department:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/paypan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payDept"
+                android:hint="PAN No:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/payuan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/paypan"
+                android:hint="UAN No:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/paypaiddate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payuan"
+                android:hint="Cr/ Paid Date:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/payaccount"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/paypaiddate"
+                android:hint="Account No:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/paybankname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payaccount"
+                android:hint="Bank name:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/payearning"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/paybankname"
+                android:hint="Earning:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/paydeduction"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payearning"
+                android:hint="Deduction(-):"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/payadjustment"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/paydeduction"
+                android:hint="Adjustments(+):"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/paytotal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payadjustment"
+                android:hint="Total(=):"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/paygrosssalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paytotal"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="30dp"
+                android:text="Gross Salary:"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/paybasicamount"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/paygrosssalary"
+                android:hint="Basic Amount:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/payvariable"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/paybasicamount"
+                android:hint="Variable DA:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/paystatutory"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payvariable"
+                android:hint="Statutory:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/payprefallowances"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/paystatutory"
+                android:hint="Pref Allowances:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/paygrosstotal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payprefallowances"
+                android:hint="Total Amount:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/paycompdeductions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paygrosstotal"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="30dp"
+                android:text="Company Deductions:"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/payesicontribution"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/paycompdeductions"
+                android:hint="Ee ESI Contribution:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/payepfcontribution"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payesicontribution"
+                android:hint="Ee PF Contribution:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/payproftax"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payepfcontribution"
+                android:hint="Prof Tax Split Period:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/paydeductiontotal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/payproftax"
+                android:hint="Total Amount:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/paynetsalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paydeductiontotal"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="30dp"
+                android:text="Net Salary:"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/paynettotal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Total Amount:"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/paynetsalary"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"/>
+
+            <Button
+                android:id="@+id/paycreatepayslip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_below="@+id/paynettotal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

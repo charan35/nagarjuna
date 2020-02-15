@@ -1,0 +1,2044 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcg"
+    tools:context=".Permissions">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/logo"
+                    android:src="@mipmap/ic_launcher_foreground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alta CRM"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/bellb"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <HorizontalScrollView
+        android:id="@+id/lq"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbar"
+        android:measureAllChildren="false"
+        android:scrollbars="none"
+        android:background="@color/endblue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/endblue">
+
+            <ImageView
+                android:id="@+id/iv25"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:text=" Admin ->"
+                android:id="@+id/admin"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:id="@+id/emplist"
+                android:text=" Emp List ->"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:text=" Preferences"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:visibility="gone"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lq">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFirstName"
+                android:textColor="#ffff"
+                android:text="EMPID"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:id="@+id/lemp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/l1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Employee profile?"
+                        android:id="@+id/question1"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/profile1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="profile"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/profile"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/l2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Project?"
+                        android:id="@+id/question2"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/project1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="project"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/project"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/l3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Messages?"
+                        android:id="@+id/question3"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/message1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="message"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/message"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/l4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="MyPay?"
+                        android:id="@+id/question4"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/mypay1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="mypay"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/mypay"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Payslips?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/payslips1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="payslips"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/payslips"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Upload Reimbursement?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/reimbursement11"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="ureim"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/reimbursement1"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/l5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Attendance?"
+                        android:id="@+id/question5"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/attendance1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="attendance"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/attendance"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Our Updates?"
+                        android:id="@+id/question6"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/updates1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="updates"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/updates"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="My Projects?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/myproject1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="myproject"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/myproject"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Careers?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/careers1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="careers"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/careers"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/button"
+                    android:layout_gravity="center"
+                    android:onClick="register"
+                    android:background="#ffff"
+                    android:text="submit">
+                </Button>
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/lhr">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/h1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Employee profile?"
+                        android:id="@+id/questionh1"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/profileh1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="profile"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/profileh"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="New Project?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/projecth1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="project"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/projecth"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Messages?"
+                        android:id="@+id/questionh3"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/messageh1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="message"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/messageh"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="MyPay?"
+                        android:id="@+id/questionh4"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/mypayh1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="mypay"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/mypayh"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Payslips?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/payslipsh1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="payslips"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/payslipsh"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Upload Reimbursement?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/reimbursement1h1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="ureim"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/reimbursement1h"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Attendance?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/attendanceh1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="attendance"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/attendanceh"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Our Updates?"
+                        android:id="@+id/questionh6"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/updatesh1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="updates"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/updatesh"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="My Projects?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/myprojecth1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="myproject"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/myprojecth"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="New Employee Form?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/hnewempform1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="empform"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/hnewempform"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Employee Directory?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/hempdirectory1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="empdirectory"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/hempdirectory"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Project Details?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/hprojectdetails1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="projdetails"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/hprojectdetails"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Emp-Attendance?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/hempattendance1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="empattend"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/hempattendance"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Re-imbursement Fetch?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/hreimbursement1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="reim"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/hreimbursement"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Documents Upload?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/hdocumentsupload1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="docupload"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/hdocumentsupload"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Download Payslips?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/hpayslips1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="payslips"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/hpayslips"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Rewards?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/hrewards1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="rewards"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/hrewards"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Careers?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/hcareers1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="careers"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/hcareers"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Interviews?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/hinterviews1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="interviews"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/hinterviews"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/buttonh"
+                    android:onClick="register1"
+                    android:layout_gravity="center"
+                    android:background="#ffff"
+                    android:text="submit">
+                </Button>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/ladmin">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Employee profile?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/profilea1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="profile"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/profilea"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="New Project?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/projecta1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="project"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/projecta"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Messages?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/messagea1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="message"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/messagea"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="MyPay?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/mypaya1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="mypay"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/mypaya"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Payslips?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/payslipsa1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="payslips"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/payslipsa"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Upload Reimbursement?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/reimbursement1a1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="ureim"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/reimbursement1a"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Attendance?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/attendancea1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="attendance"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/attendancea"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Our Updates?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/updatesa1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="updates"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/updatesa"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="My Projects?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/amyprojects1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="myprojects"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/amyprojects"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="New Employee Form?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/anewempform1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="newempform"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/anewempform"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Employee Directory?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/aempdirectory1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="empdirectory"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/aempdirectory"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Project Details?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/aprojectdetails1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="projdetails"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/aprojectdetails"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Emp-Attendance?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/aempattendance1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="empattend"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/aempattendance"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Payroll?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/apayroll1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="payroll"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/apayroll"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Re-Imbursement Fetch?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/areimbursement1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="reimbursement"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/areimbursement"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Documents Upload?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/adocumentsupload1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="docupload"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/adocumentsupload"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Documents Fetch?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/adocumentsfetch1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="docfetch"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/adocumentsfetch"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Download Payslips?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/apayslips1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="payslips"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/apayslips"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Rewards?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/arewards1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="rewards"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/arewards"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Permissions?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/apermissions1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="permissions"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/apermissions"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="CC-Camera?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/acccamera1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="cccamera"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/acccamera"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Careers?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/acareers1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="careers"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/acareers"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Interviews?"
+                        android:textColor="#ffff"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/ainterviews1"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/starblue"
+                        android:text="interviews"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/ainterviews"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:entries="@array/Path"
+                        android:background="#ffff"/>
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/buttona"
+                    android:onClick="register2"
+                    android:layout_gravity="center"
+                    android:background="#ffff"
+                    android:text="submit">
+                </Button>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="eCommerce Solutions - Shopping Cart"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="#4286f4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Paragraph2"
+            android:textColor="#ffff"
+            android:textSize="18dp"
+            android:paddingTop="30dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To say in simple words:"
+            android:textSize="23dp"
+            android:textColor="#fcfc02"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            />
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can be totally independent when it comes to manage your business online."
+                android:textSize="23dp"
+                android:textColor="#fc7a01"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Paragraph3"
+            android:textColor="#ffff"
+            android:textSize="18dp"
+            android:paddingTop="30dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

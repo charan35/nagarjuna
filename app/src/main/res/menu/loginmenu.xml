@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/helpdesk"
+        android:title="Help Desk"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/aboutus"
+        android:title="About Us"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/contactus"
+        android:title="Contact Us"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/services"
+        android:title="Services"
+        app:showAsAction="withText"/>
+
+</menu>

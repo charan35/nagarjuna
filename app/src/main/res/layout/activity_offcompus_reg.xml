@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2A8DF"
+    android:orientation="vertical"
+    tools:context=".Offcompus_reg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/logo"
+                    app:srcCompat="@mipmap/ic_launcher_foreground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alta OSS"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/bellb"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/empid"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:id="@+id/lq"
+                android:background="@color/endblue">
+
+                <ImageView
+                    android:id="@+id/iv25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:id="@+id/admin"
+                    android:backgroundTint="@color/starblue"
+                    android:text=" HR ->"
+                    android:textColor="#000"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:backgroundTint="@color/starblue"
+                    android:text="Interviews->"
+                    android:textColor="#000"
+                    android:id="@+id/dashboard"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:id="@+id/form"
+                    android:backgroundTint="@color/starblue"
+                    android:text="OffCampus->"
+                    android:textColor="#000"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:backgroundTint="@color/starblue"
+                    android:text="New Registration"
+                    android:textColor="#000"
+                    android:textSize="17dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:id="@+id/lq1"
+                android:background="@color/endblue">
+
+                <ImageView
+                    android:id="@+id/iv251"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:id="@+id/admin1"
+                    android:backgroundTint="@color/starblue"
+                    android:text=" Admin ->"
+                    android:textColor="#000"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:backgroundTint="@color/starblue"
+                    android:text="Interviews->"
+                    android:textColor="#000"
+                    android:id="@+id/dashboard1"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:backgroundTint="@color/starblue"
+                    android:text="OffCampus ->"
+                    android:textColor="#000"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:id="@+id/form1"
+                    android:backgroundTint="@color/starblue"
+                    android:text="New Registration"
+                    android:textColor="#000"
+                    android:textSize="17dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="offcampus"
+                android:visibility="invisible"
+                android:id="@+id/offcompus"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="status"
+                android:visibility="invisible"
+                android:id="@+id/status"/>
+
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:drawablePadding="8dip"
+                android:fontFamily="Source Code Pro"
+                android:hint="Full name"
+                android:paddingLeft="10dp"
+                android:textColor="#090909"
+                android:background="@drawable/box5"
+                android:textColorHint="#090909"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+
+
+            <EditText
+                android:id="@+id/qualification"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dip"
+                android:fontFamily="Source Code Pro"
+                android:hint="qualification"
+                android:paddingLeft="10dp"
+                android:textColor="#090909"
+                android:gravity="center"
+                android:background="@drawable/box5"
+                android:textColorHint="#090909"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/fre"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dip"
+                android:fontFamily="Source Code Pro"
+                android:hint="fresher/experience"
+                android:paddingLeft="10dp"
+                android:textColor="#090909"
+                android:gravity="center"
+                android:background="@drawable/box5"
+                android:textColorHint="#090909"
+                android:textStyle="bold"/>
+
+
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dip"
+                android:fontFamily="Source Code Pro"
+                android:hint="E-mail"
+                android:gravity="center"
+
+                android:paddingLeft="10dp"
+                android:textColor="#090909"
+                android:background="@drawable/box5"
+                android:textColorHint="#090909"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dip"
+                android:fontFamily="Source Code Pro"
+                android:hint="Mobile No"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/box5"
+                android:textColorHint="#090909"
+                android:gravity="center"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/designation"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dip"
+                android:fontFamily="Source Code Pro"
+                android:hint="Designation"
+                android:paddingLeft="10dp"
+                android:textColor="#090909"
+                android:background="@drawable/box5"
+                android:gravity="center"
+                android:textColorHint="#090909"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/project"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dip"
+                android:fontFamily="Source Code Pro"
+                android:hint="Project"
+                android:paddingLeft="10dp"
+                android:textColor="#090909"
+                android:background="@drawable/box5"
+                android:gravity="center"
+                android:textColorHint="#090909"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/referencename"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dip"
+                android:fontFamily="Source Code Pro"
+                android:hint="Reference Name"
+                android:paddingLeft="10dp"
+                android:textColor="#090909"
+                android:background="@drawable/box5"
+                android:gravity="center"
+                android:textColorHint="#090909"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/referenceid"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dip"
+                android:fontFamily="Source Code Pro"
+                android:hint="Reference Id"
+                android:paddingLeft="10dp"
+                android:textColor="#090909"
+                android:background="@drawable/box5"
+                android:gravity="center"
+                android:textColorHint="#090909"
+                android:textStyle="bold"/>
+
+
+            <Button
+                android:id="@+id/register_register"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="#090909"
+                android:paddingLeft="10dp"
+                android:text="REGISTER"
+                android:background="@drawable/box4"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

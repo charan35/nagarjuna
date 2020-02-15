@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Branding Solutions"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="#4286f4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Engine Optimization (SEO)"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Social Media Optimization (SMO)"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Search Engine Marketing (SEM)"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Digital Marketing"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Marketing"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/l1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search Engine Optimization"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="#4286f4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Paragraph4"
+            android:textColor="#ffff"
+            android:textSize="18dp"
+            android:paddingTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Why SEO is Important for Businesses ?"
+            android:textSize="20dp"
+            android:paddingTop="10dp"
+            android:textColor="#4286f4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Any business desperately needs to have an SEO strategy in system if you are interested to be successful in of online marketing; it is the first and foremost factor for any business branding efforts and online presence."
+                android:textSize="18dp"
+                android:textColor="#ffff"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Paragraph9"
+                android:paddingTop="10dp"
+                android:textColor="#ffff"
+                android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call us for any query or Get your Quote!"
+            android:textSize="25dp"
+            android:paddingTop="10dp"
+            android:textColor="#fcfc02"
+            android:paddingBottom="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            />
+
+        </LinearLayout>
+
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/l2"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Social Media Optimization"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="#4286f4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Paragraph5"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffff"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Call us for any query or Get your Quote!"
+                    android:textColor="#fcfc02"
+                    android:paddingBottom="40dp"
+                    android:textSize="25dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/l3"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Search Engine Marketing"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="#4286f4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SEM (Search Engine Marketing) is the process of gaining website traffic by purchasing ads on search engines"
+                    android:textSize="20dp"
+                    android:textColor="#4286f4"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Paragraph6"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffff"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Call us for any query or Get your Quote!"
+                    android:textColor="#fcfc02"
+                    android:paddingBottom="40dp"
+                    android:textSize="25dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/l4"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Digital Marketing"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="#4286f4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Digital marketing is the promotion of products or brands via one or more forms of electronic media. Digital marketing differs from traditional marketing in that it involves the use of channels and methods that enable an organization to analyze marketing campaigns and understand what is working and what isn't – typically in real time."
+                    android:textSize="18dp"
+                    android:textColor="#ffff"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Three Keys to Digital Marketing Success"
+                    android:textSize="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#4286f4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Paragraph7"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffff"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Call us for any query or Get your Quote!"
+                    android:textColor="#fcfc02"
+                    android:paddingBottom="40dp"
+                    android:textSize="25dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/l5"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email Marketing"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="#4286f4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email marketing presents more opportunities for your business and drives a better return on investment. With email marketing, your business can create deeper relationships with a wider audience at a fraction of the cost of traditional media."
+                    android:textSize="18dp"
+                    android:textColor="#ffff"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email Marketing Campaign"
+                    android:textSize="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#4286f4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Paragraph8"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffff"
+                    android:textSize="18dp"/>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Marketing is a must"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#4286f4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In today's ever-changing digital world, email marketing tends to take a backseat. However, if you haven't considered email marketing for your business already, now is the time. Email marketing is a targeted, shareable, credible, measurable, and cost-effective tool overlooked by many."
+                    android:paddingTop="10dp"
+                    android:textColor="#ffff"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Call us for any query or Get your Quote!"
+                    android:textColor="#fcfc02"
+                    android:paddingBottom="40dp"
+                    android:textSize="25dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+</LinearLayout>

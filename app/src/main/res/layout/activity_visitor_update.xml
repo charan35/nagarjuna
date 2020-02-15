@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VisitorUpdateActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visitor Update Form"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/vistv"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/vistv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viseditfname" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/viseditfname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viseditlname" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="number"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/viseditlname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viseditphone" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/viseditphone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viseditcontactperson" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/viseditcontactperson"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viseditcompanyname" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/viseditcompanyname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viseditcompanyaddress" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/viseditcompanyaddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viseditemail" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/viseditemail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viseditreasonforvisit" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/viseditreasonforvisit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viseditdateofvisit" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/viseditdateofvisit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viseditpersonalid" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/viseditpersonalid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/visedittypeofvisit" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_below="@+id/visedittypeofvisit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viseditempid" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Update"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/viseditupdate"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/viseditempid"/>
+
+    </RelativeLayout>
+
+</ScrollView>

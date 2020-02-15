@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/screen"
+    android:layout_height="match_parent"
+    tools:context=".CalendarActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo"
+                app:srcCompat="@mipmap/ic_launcher_foreground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alta OSS"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:fontFamily="@font/bellb"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/lq"
+        android:background="@color/endblue">
+
+        <ImageView
+            android:id="@+id/iv25"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:id="@+id/admin"
+            android:backgroundTint="@color/starblue"
+            android:text=" Employee Dashboard ->"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:backgroundTint="@color/starblue"
+            android:text=" Calendar"
+            android:textColor="#000"
+            android:id="@+id/empdirectory"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/lq1"
+        android:background="@color/endblue">
+
+        <ImageView
+            android:id="@+id/iv251"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:id="@+id/admin1"
+            android:backgroundTint="@color/starblue"
+            android:text=" HR Dashboard->"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:backgroundTint="@color/starblue"
+            android:text=" Calendar"
+            android:textColor="#000"
+            android:id="@+id/empdirectory1"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:id="@+id/lq2"
+            android:background="@color/endblue">
+
+            <ImageView
+                android:id="@+id/iv252"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:id="@+id/admin2"
+                android:backgroundTint="@color/starblue"
+                android:text=" Admin Dashboard->"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:text=" Calendar"
+                android:textColor="#000"
+                android:id="@+id/empdirectory2"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empid"
+        android:visibility="gone"
+        android:layout_below="@+id/linear"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:visibility="gone"
+        android:layout_below="@+id/linear"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:visibility="gone"
+        android:layout_below="@+id/linear"/>
+
+
+    <CalendarView
+        android:id="@+id/cale"
+        android:selectedWeekBackgroundColor="@color/colorPrimary"
+        android:layout_width="360dp"
+        android:layout_height="332dp"
+        android:layout_marginTop="30dp"
+        android:focusedMonthDateColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner"
+        android:layout_below="@+id/linear"
+        android:weekDayTextAppearance="@color/colorPrimaryDark"
+        tools:ignore="MissingConstraints">
+
+    </CalendarView>
+
+    <Button
+        android:id="@+id/btn_add_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Add event"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>

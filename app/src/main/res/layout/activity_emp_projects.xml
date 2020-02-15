@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".EmpProjects">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo"
+                app:srcCompat="@mipmap/ic_launcher_foreground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alta OSS"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:fontFamily="@font/bellb"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/lq"
+        android:background="@color/endblue">
+
+        <ImageView
+            android:id="@+id/iv25"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:id="@+id/admin"
+            android:backgroundTint="@color/starblue"
+            android:text=" HR ->"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:backgroundTint="@color/starblue"
+            android:text=" Projects"
+            android:textColor="#000"
+            android:id="@+id/empdirectory"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/lq1"
+        android:background="@color/endblue">
+
+        <ImageView
+            android:id="@+id/iv251"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:id="@+id/admin1"
+            android:backgroundTint="@color/starblue"
+            android:text=" Admin ->"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:backgroundTint="@color/starblue"
+            android:text=" Projects"
+            android:textColor="#000"
+            android:id="@+id/empdirectory1"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user"
+        android:visibility="gone"
+        android:textColor="#ffff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="384dp"
+        tools:layout_editor_absoluteY="0dp" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Grid"
+        android:visibility="gone" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Grid1"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Projects List"
+        android:textColor="#ff8000"
+        android:layout_below="@+id/linear"
+        android:fontFamily="@font/coopbl"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:id="@+id/name"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:id="@+id/linear2">
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:layout_margin="10dp">
+    </SearchView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:id="@+id/text1"
+        android:textColor="#ffffff"
+        android:text="Search Here"
+        android:fontFamily="@font/timesbd"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:background="@color/endblue">
+    </TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        app:srcCompat="@drawable/ic_search_white_24dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:id="@+id/scroll"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/l1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/ongoingProjects"
+                    android:src="@drawable/calendar"
+                    android:background="@drawable/projectimage1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ongoing Projects"
+                    android:textColor="#ED4921"
+                    android:id="@+id/ongoing"
+                    android:fontFamily="@font/times"
+                    android:textSize="17dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/l2"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/completedProjects"
+                    android:src="@drawable/checklist" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Completed Projects"
+                    android:gravity="center"
+                    android:textColor="#ED4921"
+                    android:fontFamily="@font/times"
+                    android:textSize="17dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/l3"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/futureProjects"
+                    android:src="@drawable/conference" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Future Projects"
+                    android:gravity="center"
+                    android:textColor="#ED4921"
+                    android:fontFamily="@font/times"
+                    android:textSize="17dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/l4"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/totalProjects"
+                    android:src="@drawable/totalprojects"
+                    android:background="@drawable/projectimage1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Projects"
+                    android:textColor="#ED4921"
+                    android:fontFamily="@font/times"
+                    android:textSize="17dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview1"
+        android:layout_below="@+id/scroll"
+        android:dividerHeight="10dp"
+        android:textAlignment="center"
+        android:divider="#ffffff"
+        android:layout_margin="5dp"
+        android:background="#b3e6ff"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview2"
+        android:layout_below="@+id/scroll"
+        android:dividerHeight="10dp"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:divider="#ffffff"
+        android:layout_margin="5dp"
+        android:background="#b3e6ff"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview3"
+        android:layout_below="@+id/scroll"
+        android:dividerHeight="10dp"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:divider="#ffffff"
+        android:layout_margin="5dp"
+        android:background="#b3e6ff"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview4"
+        android:layout_below="@+id/scroll"
+        android:dividerHeight="10dp"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:divider="#ffffff"
+        android:layout_margin="5dp"
+        android:background="#b3e6ff"/>
+
+</RelativeLayout>

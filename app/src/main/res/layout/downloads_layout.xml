@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/url"
+        android:text="Url"
+        android:layout_weight="1"
+        android:textColor="@color/colorCell" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/url">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/empid"
+                android:text="Empid"
+                android:textColor="@color/navyBlue"
+                android:textSize="17dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/type"
+                android:text="Type"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp"
+                android:layout_below="@+id/empid"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:id="@+id/view"
+                android:text="view"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:background="@color/gradStop"/>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:id="@+id/delete"
+                android:text="delete"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:background="@color/gradStop"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

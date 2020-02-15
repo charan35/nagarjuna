@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmpReimbursement">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo"
+                app:srcCompat="@mipmap/ic_launcher_foreground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alta OSS"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:fontFamily="@font/bellb"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user"
+            android:textColor="#ffff"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="384dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/lq"
+            android:visibility="gone"
+            android:background="@color/endblue">
+
+            <ImageView
+                android:id="@+id/iv13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:id="@+id/dashboard"
+                android:backgroundTint="@color/starblue"
+                android:text=" DashBoard ->"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/mypay"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:text=" MyPay ->"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:text="Reimbursement"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/lq1"
+            android:visibility="gone"
+            android:background="@color/endblue">
+
+            <ImageView
+                android:id="@+id/iv131"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:id="@+id/dashboard1"
+                android:backgroundTint="@color/starblue"
+                android:text=" HR ->"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/mypay1"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:text=" MyPay ->"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:text="Reimbursement"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/lq2"
+            android:visibility="gone"
+            android:background="@color/endblue">
+
+            <ImageView
+                android:id="@+id/iv132"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:id="@+id/dashboard2"
+                android:backgroundTint="@color/starblue"
+                android:text=" Admin ->"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/mypay2"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:text=" MyPay ->"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/starblue"
+                android:text="Reimbursement"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+         <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Spinner1"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/Expenses">
+        </Spinner>
+
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/Spinner1"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/v_flipper"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textview"
+                    android:hint="empid"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/Spinner1"
+                    android:visibility="invisible"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Grid2"
+                    android:layout_below="@+id/Spinner1"
+                    android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/Spinner1"
+            android:layout_marginTop="30dp"
+            android:id="@+id/linear1"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:id="@+id/select4">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Monthly"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/mobilemonth1" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Yearly"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/mobileyear1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="10dp"
+                android:id="@+id/Mobile">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="Mobile No"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/editText" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_below="@+id/Mobile"
+                android:id="@+id/Operator">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Operator:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Operator"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/editText1"
+                    android:layout_below="@+id/editText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_below="@+id/Operator"
+                android:id="@+id/BillNumber">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bill Number:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Bill Number"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/editText2"
+                    android:layout_above="@+id/editText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/BillMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Bill Date:"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:hint="Bill Date"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/editText3"
+                    android:layout_above="@+id/editText" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/general_date"
+                    app:srcCompat="@drawable/reimbursement_date"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Vechicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Payment Mode:"
+                    android:textSize="16dp"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner2"
+                    android:layout_weight="2"
+                    android:entries="@array/money"
+                    android:layout_above="@+id/editText3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ClaimedAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Claimed Amount:"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Claimed Amount"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/editText4"
+                    android:layout_above="@+id/editText"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobilestatus"
+                android:text="MobileStatus"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Spinner1"
+                android:text="Select PDF TO Upload" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText1"
+                android:text="Submit" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/Spinner1"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:id="@+id/linear2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:id="@+id/select3">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Monthly"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/generalmonth1" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Yearly"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/generalyear1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="10dp"
+                android:id="@+id/select">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please Select:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Generalexpenses"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/generalSpinner1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:id="@+id/GeneralBillNumber">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bill Number:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Bill Number"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/expenseseditText1" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/GeneralBillMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:text="Bill Date:"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:hint="Bill Date"
+                    android:gravity="center"
+                    android:layout_weight="2.2"
+                    android:id="@+id/expenseseditText2"
+                    android:layout_above="@+id/editText"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/date"
+                    android:id="@+id/dateimage"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/GeneralVechicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Payment Mode:"
+                    android:textSize="16dp"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expensesspinner2"
+                    android:layout_weight="2"
+                    android:entries="@array/money"
+                    android:layout_above="@+id/editText3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/GeneralClaimedAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Claimed Amount:"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Claimed Amount"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:inputType="number"
+                    android:id="@+id/expenseseditText3"
+                    android:layout_above="@+id/editText"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/generalstatus"
+                android:text="GeneralStatus"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+
+
+            <Button
+                android:id="@+id/expensesbutton"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Spinner1"
+                android:text="Select PDF TO Upload" />
+            <Button
+                android:id="@+id/submitbutton2"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText1"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/Spinner1"
+            android:layout_marginTop="30dp"
+            android:id="@+id/linear3"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:id="@+id/select2">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Monthly"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/conveyancemonth1" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Yearly"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/conveyanceyear1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="20dp"
+                android:id="@+id/select1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please Select:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Conveyances"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/conveyanceSpinner1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:hint="Start Date"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/conveyanceeditText1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date_re"
+                    app:srcCompat="@drawable/reimbursement_date"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="End Date:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:hint="End Date"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/conveyanceeditText2" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date1_re"
+                    app:srcCompat="@drawable/reimbursement_date"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Source:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Source"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/conveyanceeditText3" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Destination:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Destination"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/conveyanceeditText4" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Kms:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Total kms"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/conveyanceeditText5" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs/Km:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/conveyanceeditText6" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Mode:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/money"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/conveyanceSpinner2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Claimed Amount:"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="2"
+                    android:id="@+id/conveyancetextview" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/conveyancestatus"
+                android:text="ConveyanceStatus"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <Button
+                android:id="@+id/conveyancebutton"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Spinner1"
+                android:text="Select PDF TO Upload" />
+            <Button
+                android:id="@+id/submitbutton3"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText1"
+                android:text="Submit" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/update1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textColor="#E76E24"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jjhhh"
+            android:paddingLeft="100dp"
+            android:textColor="#E76E24"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:hint="reference Name:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/referencename"
+            android:paddingLeft="10dp"
+            android:textColor="#E76E24"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Name"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/update1"
+        android:id="@+id/updat">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qualification"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            android:textColor="#2453E7"
+            android:layout_marginLeft="10dp"
+            android:hint="Qualification"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jjhh"
+            android:paddingLeft="100dp"
+            android:textColor="#E76E24"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:hint="reference Id:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/referenceid"
+            android:paddingLeft="10dp"
+            android:textColor="#E76E24"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Id"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/updat"
+        android:id="@+id/udat">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/update1"
+        android:hint="Email"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/udat"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="mobile" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:hint="project name:" />
+
+        <TextView
+            android:id="@+id/project"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="project " />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

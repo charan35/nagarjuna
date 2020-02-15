@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/pending"
+        android:title="Pending Queries"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/resolved"
+        android:title="Resolved Queries"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/unresolved"
+        android:title="Unresolved Queries"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/unable"
+        android:title="Unable to Resolve Queries"
+        app:showAsAction="withText"/>
+</menu>

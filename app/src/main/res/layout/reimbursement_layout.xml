@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category:"
+        android:id="@+id/hello"
+        android:textColor="@color/Blue"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empid"
+        android:text="Empid"
+        android:textColor="@color/darkblue"
+        android:layout_toRightOf="@+id/hello"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hello1"
+        android:text="Employee ID:"
+        android:textColor="@color/Blue"
+        android:layout_below="@+id/empid"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/type"
+        android:layout_toRightOf="@+id/hello1"
+        android:text="Type"
+        android:textColor="@color/darkblue"
+        android:layout_below="@+id/empid"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:text="DateAndTime"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/navyBlue" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/status"
+    android:layout_below="@+id/type"
+    android:text="status"/>
+
+</RelativeLayout>

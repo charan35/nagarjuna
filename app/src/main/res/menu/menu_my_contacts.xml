@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <item
+        android:id="@+id/action_add_contact"
+        android:icon="@drawable/ic_add_contact"
+        android:title="action_add_contact"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="Query"
+        app:showAsAction="never" />
+
+
+</menu>
